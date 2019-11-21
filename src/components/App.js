@@ -1,17 +1,16 @@
-import React from 'react'
-import Display from './Display'
-import ButtonPanel from './ButtonPanel'
+import React from 'react';
+import Display from './Display';
+import ButtonPanel from './ButtonPanel';
 
 class App extends React.Component {
   render() {
-
-    return(
+    return (
       <div id="app">
-        <Display value='0'/>
+        <Display value="0"/>
         <ButtonPanel />
       </div>
-    )
+    );
   };
 }
 
-export default App;
+export default App

@@ -37,7 +37,8 @@ class ButtonPanel extends React.Component {
         </div>
       </div>
     );
-  };
+  }
 }
 
-export default ButtonPanel
+export default ButtonPanel;
+

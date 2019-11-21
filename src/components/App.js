@@ -6,11 +6,11 @@ class App extends React.Component {
   render() {
     return (
       <div id="app">
-        <Display value="0"/>
+        <Display value="0" />
         <ButtonPanel />
       </div>
     );
-  };
+  }
 }
 
-export default App
+export default App;

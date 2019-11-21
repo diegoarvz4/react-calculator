@@ -8,10 +8,10 @@ const Button = (props) => {
       { name }
     </div>
   );
-}
+};
 
 Button.defaultProps = {
-  name: "0",
+  name: '0',
 };
 
 

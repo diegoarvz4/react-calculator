@@ -1,5 +1,11 @@
-const Display = (props = '0') => {
+import React from 'react';
+
+const Display = (props) => {
   return (
-    {props}
+    <div>
+      <div>{props.value}</div>
+    </div>
   );
 }
+
+export default Display;

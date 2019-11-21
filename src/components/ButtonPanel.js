@@ -1,5 +1,6 @@
-import React from 'react'
-import Button from './Button'
+// eslint-disable-next-line react/prefer-stateless-function
+import React from 'react';
+import Button from './Button';
 
 class ButtonPanel extends React.Component {
 
@@ -41,4 +42,3 @@ class ButtonPanel extends React.Component {
 }
 
 export default ButtonPanel;
-

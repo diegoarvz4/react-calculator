@@ -1,3 +1,4 @@
+// eslint-disable-next-line react/prefer-stateless-function
 import React from 'react';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';

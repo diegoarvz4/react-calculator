@@ -1,10 +1,11 @@
 import React from 'react';
+// eslint-disable-next-line import/no-extraneous-dependencies
 import PropTypes from 'prop-types';
 
 const Display = (props) => {
   const { value } = props;
   return (
-    <div>
+    <div id="display">
       { value }
     </div>
   );

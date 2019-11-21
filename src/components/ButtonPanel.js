@@ -1,7 +1,7 @@
-// eslint-disable-next-line react/prefer-stateless-function
 import React from 'react';
 import Button from './Button';
 
+// eslint-disable-next-line react/prefer-stateless-function
 class ButtonPanel extends React.Component {
 
   render() {

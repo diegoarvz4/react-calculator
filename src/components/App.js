@@ -20,7 +20,8 @@ class App extends React.Component {
   }
 
   handleClick(buttonName) {
-    this.setState((state) => calculate(state, buttonName));
+    // eslint-disable-next-line arrow-parens
+    this.setState(state => calculate(state, buttonName));
   }
 
   render() {

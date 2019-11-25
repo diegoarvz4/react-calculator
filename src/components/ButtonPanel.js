@@ -4,8 +4,14 @@ import Button from './Button';
 
 // eslint-disable-next-line react/prefer-stateless-function
 class ButtonPanel extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+  }
+
   handleClick(buttonName) {
-    this.props.clickHandler(buttonName);
+    const { clickHandler } = this.props;
+    clickHandler(buttonName);
   }
 
   render() {
@@ -31,15 +37,15 @@ class ButtonPanel extends React.Component {
           <Button name="-" clickHandler={this.handleClick} />
         </div>
         <div className="buttons-4">
-          <Button name="1" color={btnGray} clickHandler={this.props.clickHandler} />
-          <Button name="2" color={btnGray} clickHandler={this.props.clickHandler} />
-          <Button name="3" color={btnGray} clickHandler={this.props.clickHandler} />
-          <Button name="+" clickHandler={this.props.clickHandler}/>
+          <Button name="1" color={btnGray} clickHandler={this.handleClick} />
+          <Button name="2" color={btnGray} clickHandler={this.handleClick} />
+          <Button name="3" color={btnGray} clickHandler={this.handleClick} />
+          <Button name="+" clickHandler={this.handleClick} />
         </div>
         <div className="buttons-5">
-          <Button name="0" color={btnGray} wide="50%" clickHandler={this.props.clickHandler} />
-          <Button name="." color={btnGray} clickHandler={this.props.clickHandler} />
-          <Button name="=" clickHandler={this.props.clickHandler} />
+          <Button name="0" color={btnGray} wide="50%" clickHandler={this.handleClick} />
+          <Button name="." color={btnGray} clickHandler={this.handleClick} />
+          <Button name="=" clickHandler={this.handleClick} />
         </div>
       </div>
     );

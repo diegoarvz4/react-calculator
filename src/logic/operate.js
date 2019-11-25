@@ -1,23 +1,30 @@
 /* eslint-disable radix */
-import { Big } from 'big';
+// eslint-disable-next-line import/extensions
+import { Big } from 'big.js/big.js';
 
 const operate = (numOne, numTwo, operation) => {
   let total = '';
 
   if (operation === 'X') {
-    total = Big(parseInt(numOne) * parseInt(numTwo));
+    total = Big(parseFloat(numOne) * parseFloat(numTwo));
   } else
   if (operation === '+') {
-    total = Big(parseInt(numOne) + parseInt(numTwo));
+    total = Big(parseFloat(numOne) + parseFloat(numTwo));
   } else
   if (operation === '-') {
-    total = Big(parseInt(numOne) - parseInt(numTwo));
+    total = Big(parseFloat(numOne) - parseFloat(numTwo));
   } else
   if (operation === '÷') {
-    total = Big(parseInt(numOne) / parseInt(numTwo));
+    if (numTwo === '0') {
+      return 'Error';
+    }
+    total = Big(parseFloat(numOne) / parseFloat(numTwo));
   } else
   if (operation === '%') {
-    total = Big(parseInt(numOne) % parseInt(numTwo));
+    if (numTwo === '0') {
+      return 'Error';
+    }
+    total = Big(parseFloat(numOne) % parseFloat(numTwo));
   }
 
   return total;
